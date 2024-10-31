@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Configuração</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script>
+        function processar(){
+          var url="http://localhost:5105/snmpwalk/";
+          var version = document.getElementById("version").value;
+          var community = document.getElementById("community").value;
+          var ip = document.getElementById("ip").value;	
+          url=url+version+"/"+community+"/"+ip;
+        
+          window.location.assign(url);
+        }
+      </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Configuração</h2>
+     
+            <div class="form-group">
+                <label for="ip">IP:</label>
+                <input type="text" id="ip" name="ip" placeholder="Digite o IP" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="version">Versão:</label>
+                <input type="text" id="version" name="version" placeholder="Digite a versão" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="community">Community:</label>
+                <input type="text" id="community" name="community" placeholder="Digite a community" required>
+            </div>
+            
+            <button onclick="processar();">Processar</button>
+        
+    </div>
+</body>
+</html>

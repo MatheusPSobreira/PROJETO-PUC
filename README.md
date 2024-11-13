@@ -7,6 +7,7 @@ Guia de instalação do programa SNMPWALK-WEB
 > Realizar a instalação do Visual Studio Code seguindo as etapas no final da pagina
 > Executar o Visual Studio Code na mesma pasta criada anteriormente e então adicionar a extensão "Live Server" através do botão de "Extensões (Ctrl+Shift+X)"
 > Executar o codigo "index.html" no botão "Go Live" localizado no canto inferior do Visual Studio Code e então colocar suas informações para rodar o comando, exemplo abaixo:
+
 ![image](https://github.com/user-attachments/assets/73f8588e-de72-4b43-bb32-a4fd69b292bb)
 
 
